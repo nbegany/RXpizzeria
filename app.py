@@ -3,7 +3,7 @@ import streamlit as st
 from openai import OpenAI
 from PIL import Image
 
-st.title("RX Pizzeria")
+st.title("ChipBot")
 
 # Initialize OpenAI client
 @st.cache_resource
@@ -19,7 +19,7 @@ client = get_openai_client(st.secrets["OPENAI_API_KEY"])
 grounding = st.secrets["GROUNDING"]
 
 # Display logo
-image = Image.open("logo.png")
+image = Image.open("ChipBot.png")
 st.image(image)
 
 # Initialize model
